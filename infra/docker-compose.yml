@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+  gogs:
+    image: thecodecamp/gogs:0.12.3
+    ports:
+      - "3000:3000"
+    networks:
+      - cicd-network
+
+  jenkins:
+    image: thecodecamp/jenkins:2.327-alpine
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8081:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - cicd-network
+
+networks:
+  cicd-network:
+    name: cicd-network
