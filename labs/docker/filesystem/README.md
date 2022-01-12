@@ -13,12 +13,13 @@ Run a container to show the new web page - you need to use the full path as the 
 # run a container mounting the local volume to the HTML directory:
 docker run -d \
   -p 8082:80 \
-  -v ./html:/usr/share/nginx/html \
+  -v ${PWD}/labs/docker/filesystem/html:/usr/share/nginx/html \
   --name nginx \
   nginx:alpine
 ```
 
 - `-v` mounts a local directory to the container - the variables store the full path and mean we can use the same Docker command on any OS
+- `${PWD}` is the environment variable holding the absolute path to present working directory
 
 > Browse to http://localhost:8082 and you'll see the custom HTML response.
 
