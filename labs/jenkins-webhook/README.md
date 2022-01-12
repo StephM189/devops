@@ -24,7 +24,7 @@
 - click on _Settings_ on the top right side of the page.
 - click on _Webhooks_ on the left panel.
 - select _Gogs_ in _Add a new webhook_ dropdown.
-- enter _Payload URL_ http://localhost:8080/gogs-webhook/?job=hello-world
+- enter _Payload URL_ http://jenkins:8080/gogs-webhook/?job=hello-world
 - leave rest of the settings as it is.
 - click on the _Add webhook_ button.
 
