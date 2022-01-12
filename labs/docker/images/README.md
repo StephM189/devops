@@ -25,15 +25,14 @@ We'll build a really simple base image:
 - [base image Dockerfile](./base/Dockerfile)
 
 ```
-docker build -t my-base-image -f ./base/Dockerfile ./base
+docker build -t my-base-image -f labs/docker/images/base/Dockerfile labs/docker/images/base
 ```
 
 - `-t` or `--tag` gives the image a name
 - you end the build command with the path to the Dockerfile folder
 - the `-f` flag specifies the Dockerfile name - you need it if you're not using the standard name
-**********
-- the folder path is called the *context* - it contains the Dockerfile and any files it references, the `index.html` file in this case
-**********
+- the folder path is called the *context* - it contains the Dockerfile and any files it references
+
 </details><br/>
 
 > These are the images stored in your local Docker engine cache.
@@ -79,7 +78,7 @@ Build a Docker image which packages that app, and run a container to confirm it'
 
 Follow the steps below:
 
-create _Dockerfile_ at _/labs/docker/images/_
+create _Dockerfile_ at _labs/docker/images/_
 
 ```
 FROM openjdk:8-jre-alpine
@@ -95,7 +94,7 @@ CMD java HelloWorld
 Build the image
 
 ```
-docker build -t java-hello-world -f Dockerfile .
+docker build -t java-hello-world -f labs/docker/images/Dockerfile labs/docker/images
 ```
 
 Run a container from the image:

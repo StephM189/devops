@@ -2,7 +2,7 @@
 
 Here's a sample solution:
 
-Copy the contents to _lab/Dockerfile_
+Copy the contents to _labs/docker/images/lab/Dockerfile_
 
 ```
 # Pull the base image as ubuntu from Dockerhub
@@ -34,7 +34,7 @@ CMD ["/opt/tomcat/bin/catalina.sh", "run"]
 Build the image specifying the path to the Dockerfile:
 
 ```
-docker build -t tomcat:9.0 -f ./lab/Dockerfile ./lab
+docker build -t tomcat:9.0 -f labs/docker/images/lab/Dockerfile labs/docker/images/lab
 ```
 
 Run a container from the image:

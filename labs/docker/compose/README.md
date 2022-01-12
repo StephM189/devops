@@ -129,7 +129,7 @@ docker-compose
 
 ```
 # run 'up' to start the app, pointing to the Compose file
-docker-compose -f ./app/docker-compose.yml up
+docker-compose -f labs/docker/compose/app/docker-compose.yml up
 ```
 
 </details><br/>
@@ -155,13 +155,13 @@ Compose is more useful with more components. [app/docker-compose.yml](./app/dock
 
 ```
 # run the app:
-docker-compose -f ./app/docker-compose.yml up -d
+docker-compose -f labs/docker/compose/app/docker-compose.yml up -d
 
 # use compose to show just this app's containers:
-docker-compose -f ./app/docker-compose.yml ps
+docker-compose -f labs/docker/compose/app/docker-compose.yml ps
 
 # and this app's logs:
-docker-compose -f ./app/docker-compose.yml logs
+docker-compose -f labs/docker/compose/app/docker-compose.yml logs
 
 ```
 
@@ -178,7 +178,7 @@ docker ps
 Finally shutdown all containers
 ```
 # Shutdown all containers started with this compose file:
-docker-compose -f ./app/docker-compose.yml down
+docker-compose -f labs/docker/compose/app/docker-compose.yml down
 ```
 ___
 ## Cleanup

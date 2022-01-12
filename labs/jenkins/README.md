@@ -28,11 +28,11 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 Next screen will ask to customize Jenkins
 
-<img src="../../img/jenkins-customize.png" width="500"/>
+<img src="../../img/jenkins-customize.png" width="600"/>
 
 <br>Next it will ask to install the plugins, select the "none" option at the top (see image)
 
-<img src="../../img/jenkins-plugin-installation.png" width="500"/>
+<img src="../../img/jenkins-plugin-installation.png" width="600"/>
 
 In the final step it Jenkins will ask to create the first admin user:
 
