@@ -10,3 +10,12 @@ We'll use lots of tools in the course and they each have their own dependencies 
 
 ### Shortened URL
 https://is.gd/devopscourse
+
+Download the repo
+```
+# Run
+git clone https://github.com/the-code-camp/devops.git
+
+# goto the folder
+cd devops
+```
